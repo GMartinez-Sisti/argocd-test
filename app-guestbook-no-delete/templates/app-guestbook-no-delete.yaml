@@ -22,5 +22,5 @@ spec:
   source:
     chart: guestbook
     repoURL: https://github.com/argoproj/argocd-example-apps.git
-    targetRevision: main
+    targetRevision: master
     path: helm-guestbook
