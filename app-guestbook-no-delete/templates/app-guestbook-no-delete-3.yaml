@@ -5,7 +5,7 @@ metadata:
   name: app-guestbook-no-delete-2
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-options: Prune=false
+    argocd.argoproj.io/sync-options: Delete=false
     argocd.argoproj.io/compare-options: ServerSideDiff=true,IncludeMutationWebhook=true
 spec:
   destination:
