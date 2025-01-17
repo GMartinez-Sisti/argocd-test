@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: app-parent-guestbook
+    path: app-guestbook-no-delete
     repoURL: https://github.com/GMartinez-Sisti/argocd-test.git
     targetRevision: HEAD
   syncPolicy:
