@@ -2,14 +2,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-guestbook-no-delete
+  name: app-guestbook-no-prune
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-options: Delete=false
+    argocd.argoproj.io/sync-options: Prune=false
     argocd.argoproj.io/compare-options: ServerSideDiff=true,IncludeMutationWebhook=true
 spec:
   destination:
-    namespace: app-guestbook-no-delete
+    namespace: app-guestbook-no-prune
     name: in-cluster
   project: default
   syncPolicy:
